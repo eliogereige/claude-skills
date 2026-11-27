@@ -1,0 +1,23 @@
+name: validate
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: "20" }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Hook tests
+        run: |
+          node plugins/garde-fou/hooks/garde-fou-stop.test.js
+          node plugins/outbound-guard/hooks/outbound-guard.test.js
+      - name: Scanner tests
+        run: python -I scripts/test_prepublish_scan.py
+      - name: Secret scan (fails on HIGH findings)
+        run: |
+          python -I scripts/prepublish_scan.py . || code=$?
+          if [ "${code:-0}" = "2" ]; then exit 1; fi

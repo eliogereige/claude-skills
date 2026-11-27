@@ -1,0 +1,13 @@
+{
+  "name": "token-weather",
+  "version": "0.2.0",
+  "description": "A weather forecast of your plan usage above the prompt: the 5-hour and weekly windows, with sparklines and reset times",
+  "author": {
+    "name": "eliogereige"
+  },
+  "license": "MIT",
+  "keywords": [
+    "mods"
+  ],
+  "types": "./types/index.d.ts"
+}

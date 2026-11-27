@@ -1,0 +1,68 @@
+{
+  "name": "claude-skills",
+  "owner": {
+    "name": "eliogereige"
+  },
+  "metadata": {
+    "description": "Agent skills, subagents, hooks and mods for Claude Code: review gates, an upload/download guard, document conversion, Gemini second opinions, a multi-agent swarm, and live status mods.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "core-skills",
+      "description": "Eight agent skills: swarm, ab-compare, markitdown, md-pdf, gemini, gemini-image, generate-qr-code, python-exe-build-pipeline",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/swarm",
+        "./skills/ab-compare",
+        "./skills/markitdown",
+        "./skills/md-pdf",
+        "./skills/gemini",
+        "./skills/gemini-image",
+        "./skills/generate-qr-code",
+        "./skills/python-exe-build-pipeline"
+      ]
+    },
+    {
+      "name": "garde-fou",
+      "source": "./plugins/garde-fou",
+      "description": "Two-tier independent review: a 1-minute tripwire subagent, a full reviewer, and a Stop hook that sends Claude back when substantial work ends unreviewed."
+    },
+    {
+      "name": "outbound-guard",
+      "source": "./plugins/outbound-guard",
+      "description": "PreToolUse hook that asks you, in one plain sentence, before any upload (pushes, POSTs, artifacts, cloud sessions, publishing tools) and any download (clones, package installs, file downloads), loudest for code downloaded and run at once."
+    },
+    {
+      "name": "git-commit-push",
+      "source": "./plugins/git-commit-push",
+      "description": "/git-commit-push: validate, commit, update TIMELINE.md when present, and push."
+    },
+    {
+      "name": "agent-tree",
+      "source": "./mods/agent-tree",
+      "description": "Mod: a live tree of the session's agents in the side pane (who started whom, model, status, tokens, tools, time), plus Architect, a canvas to design an agent team and launch it."
+    },
+    {
+      "name": "blast-radius",
+      "source": "./mods/blast-radius",
+      "description": "Mod: catches risky shell commands and explains in plain words what they would destroy and whether it can be undone, before they run."
+    },
+    {
+      "name": "effort-coach",
+      "source": "./mods/effort-coach",
+      "description": "Mod: suggests a different effort level for a prompt that needs one and sets each subagent type's model/effort by policy."
+    },
+    {
+      "name": "skill-shelf",
+      "source": "./mods/skill-shelf",
+      "description": "Mod: a /skill-shelf pane of skills, commands, agents and MCP tools that never fire on their own, with a search box, use counts and one-press launch."
+    },
+    {
+      "name": "token-weather",
+      "source": "./mods/token-weather",
+      "description": "Mod: a weather forecast of your plan usage above the prompt (5-hour and weekly windows, sparklines, reset times)."
+    }
+  ]
+}

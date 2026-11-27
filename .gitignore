@@ -1,0 +1,14 @@
+# Claude Code writes each mod's TypeScript types here when it loads the mod
+# (SDK types + schemas of your connected MCP servers, with local paths).
+**/.claude-plugin/types/
+node_modules/
+__pycache__/
+*.pyc
+# Never commit runtime state, secrets or private scan inputs
+.credentials.json
+.env*
+settings.local.json
+*.jsonl
+confidential-terms.txt
+findings.json
+scan-output.txt

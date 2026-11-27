@@ -1,0 +1,13 @@
+{
+  "name": "effort-coach",
+  "version": "0.2.0",
+  "description": "Suggests a different effort level for a prompt that clearly needs one (any of the five levels, that prompt only), sets the model/effort of each subagent type by your policy (Explore and claude-code-guide on haiku/low by default), and shows it all in a /effort-coach pane and status line",
+  "author": {
+    "name": "eliogereige"
+  },
+  "license": "MIT",
+  "keywords": [
+    "mods"
+  ],
+  "types": "./types/index.d.ts"
+}

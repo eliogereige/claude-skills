@@ -1,0 +1,8 @@
+{
+  "name": "git-commit-push",
+  "version": "0.1.0",
+  "description": "/git-commit-push: run the project's checks, write a commit message from the diff, update TIMELINE.md when the repo has one, commit and push.",
+  "author": { "name": "eliogereige" },
+  "license": "MIT",
+  "keywords": ["git", "commit", "slash-command", "workflow"]
+}

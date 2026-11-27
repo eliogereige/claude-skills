@@ -1,0 +1,8 @@
+{
+  "name": "outbound-guard",
+  "version": "0.1.0",
+  "description": "PreToolUse hook that asks you first, in one plain sentence, before anything leaves your machine (git push, uploads, POSTs, data in URLs, artifacts, cloud sessions and agents, publishing tools) or comes onto it (clones, package installs, downloads), loudest for code downloaded and run at once.",
+  "author": { "name": "eliogereige" },
+  "license": "MIT",
+  "keywords": ["security", "data-loss-prevention", "hooks", "confidentiality"]
+}

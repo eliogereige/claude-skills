@@ -1,0 +1,13 @@
+{
+  "name": "agent-tree",
+  "version": "0.1.0",
+  "description": "A live tree of the agents in this session in the side pane: who started whom, model, status, task, tokens, tools and time",
+  "author": {
+    "name": "eliogereige"
+  },
+  "license": "MIT",
+  "keywords": [
+    "mods"
+  ],
+  "types": "./types/index.d.ts"
+}

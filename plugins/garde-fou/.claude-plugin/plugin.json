@@ -1,0 +1,8 @@
+{
+  "name": "garde-fou",
+  "version": "0.1.0",
+  "description": "Two-tier independent review for Claude Code: garde-fou-quick (1-minute tripwire, CLEAN/ESCALATE), garde-fou (full read-only reviewer), and a Stop hook that sends Claude back once when substantial work ends without a review verdict.",
+  "author": { "name": "eliogereige" },
+  "license": "MIT",
+  "keywords": ["review", "subagent", "hooks", "quality", "verification"]
+}

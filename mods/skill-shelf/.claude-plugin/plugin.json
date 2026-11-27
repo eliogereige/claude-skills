@@ -1,0 +1,13 @@
+{
+  "name": "skill-shelf",
+  "version": "0.1.0",
+  "description": "A /skill-shelf pane listing the skills, commands, agents and MCP tools you have that never fire on their own, with use counts, a one-press launch and suggestions matched to your prompt",
+  "author": {
+    "name": "eliogereige"
+  },
+  "license": "MIT",
+  "keywords": [
+    "mods"
+  ],
+  "types": "./types/index.d.ts"
+}
