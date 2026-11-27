@@ -5,6 +5,9 @@
   The code here is an independent implementation (no copied code beyond the mod API's standard boilerplate) with a different scope.
 - **`skills/markitdown`** — a wrapper around [microsoft/markitdown](https://github.com/microsoft/markitdown) (MIT),
   which it calls as a library; markitdown itself is not included.
+- **Plugin icons** (`.claude-plugin/icon.png`) — the icons of `garde-fou`, `outbound-guard`, `git-commit-push` and
+  `agent-tree` were generated with Google Gemini and then edited (colour palette, rounded transparent corners); the
+  other four were drawn for this repository from simple shapes.
 
 ## Dependencies (installed separately, not included in this repository)
 
