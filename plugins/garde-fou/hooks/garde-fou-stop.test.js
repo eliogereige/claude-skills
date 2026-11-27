@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // Fixture tests for garde-fou-stop.js. Run: node garde-fou-stop.test.js
-// Entry shapes copied from real Claude Code 2.1.310 transcripts (desktop app):
+// Entry shapes modelled on the Claude Code 2.1.310 transcript format (desktop app), with synthetic content:
 // async Agent tool_result with "agentId: ...", the report as a peer hand-back user entry
 // (isMeta + origin.kind "peer", or a plain string "Another Claude session sent a message"),
 // and the completion notice as an attachment of type queued_command.

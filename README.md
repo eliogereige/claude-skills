@@ -102,8 +102,11 @@ Mod tests use Claude Code's `claude-code/testing` harness.
 ## Credits
 
 See [NOTICE.md](NOTICE.md). `blast-radius` and `token-weather` are independent implementations of ideas
-from Anthropic's example mods.
+from Anthropic's example mods. NOTICE.md also lists the third-party packages some skills need and their licenses.
 
 ## License
 
 [MIT](LICENSE)
+
+Not affiliated with or endorsed by Anthropic or Google. "Claude", "Claude Code", "Gemini" and "Nano Banana" are
+trademarks of their respective owners, used here only to describe what the tools work with.

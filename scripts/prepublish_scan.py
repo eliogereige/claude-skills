@@ -26,7 +26,7 @@ from pathlib import Path
 
 SKIP_DIRS = {".git", "node_modules", "__pycache__", ".venv", "dist", "build"}
 
-# (rule id, severity, regex). Patterns follow gitleaks' high-confidence rules.
+# (rule id, severity, regex). Written for this repo; similar in spirit to gitleaks' high-confidence rules.
 SECRET_RULES = [
     ("anthropic-key", "HIGH", r"sk-ant-[A-Za-z0-9_\-]{20,}"),
     ("openai-key", "HIGH", r"\bsk-(?:proj-)?[A-Za-z0-9_\-]{32,}"),
